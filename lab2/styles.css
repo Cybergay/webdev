@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('background.jpg'); /* Поменяйте 'background.jpg' на путь к вашему фоновому изображению */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -59,18 +59,18 @@ input[type="radio"] + label:before {
     position: absolute;
     left: 0;
     top: 0;
-    width: 20px; /* Размер кастомной радиокнопки */
-    height: 20px; /* Размер кастомной радиокнопки */
-    border: 2px solid #4816c8; /* Цвет рамки */
-    border-radius: 50%; /* Круглая рамка */
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid #4816c8; 
+    border-radius: 50%; 
 }
 
 /* Когда радиокнопка выбрана, меняем фон кастомной радиокнопки */
 input[type="radio"]:checked + label:before {
-    background-color: #4816c8; /* Цвет фона выбранной радиокнопки */
+    background-color: #4816c8; 
 }
 input[type="checkbox"] {
-    display: none; /* Скрываем дефолтный чекбокс */
+    display: none; 
 }
 
 input[type="checkbox"] + label {
