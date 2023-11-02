@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('background.jpg'); /* Поменяйте 'background.jpg' на путь к вашему фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4816c8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4816c8;
+}
+
+/* Скрываем дефолтные радиокнопки */
+input[type="radio"] {
+    display: none;
+}
+
+/* Создаем стилизованные радиокнопки */
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Расстояние между радиокнопкой и текстом */
+    cursor: pointer;
+}
+
+input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Размер кастомной радиокнопки */
+    height: 20px; /* Размер кастомной радиокнопки */
+    border: 2px solid #4816c8; /* Цвет рамки */
+    border-radius: 50%; /* Круглая рамка */
+}
+
+/* Когда радиокнопка выбрана, меняем фон кастомной радиокнопки */
+input[type="radio"]:checked + label:before {
+    background-color: #4816c8; /* Цвет фона выбранной радиокнопки */
+}
+input[type="checkbox"] {
+    display: none; /* Скрываем дефолтный чекбокс */
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4816c8;
+    background-color: white;
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #4816c8;
+    border: 2px solid #4816c8;
+}
