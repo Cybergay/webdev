@@ -19,7 +19,7 @@ form {
 label, input, select, textarea {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: black;
 }
 
 input, select, textarea {
