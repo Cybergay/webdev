@@ -42,15 +42,13 @@ input[type="submit"]:hover {
     background-color: #4816c8;
 }
 
-/* Скрываем дефолтные радиокнопки */
 input[type="radio"] {
     display: none;
 }
 
-/* Создаем стилизованные радиокнопки */
 input[type="radio"] + label {
     position: relative;
-    padding-left: 30px; /* Расстояние между радиокнопкой и текстом */
+    padding-left: 30px; 
     cursor: pointer;
 }
 
@@ -65,7 +63,6 @@ input[type="radio"] + label:before {
     border-radius: 50%; 
 }
 
-/* Когда радиокнопка выбрана, меняем фон кастомной радиокнопки */
 input[type="radio"]:checked + label:before {
     background-color: #4816c8; 
 }
