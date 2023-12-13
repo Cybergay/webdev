@@ -10,7 +10,8 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; 
+    /* ненужный */
     padding: 0;
 }
 
@@ -46,5 +47,5 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }

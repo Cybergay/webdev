@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+<header css="header">
+    <div class="search">
+        <input class="input" type="text">
+        <button class="btn">Найти</button>
+    </div>
+    <div class="container">
+        <div class="left-text">
+            Показывать по
+            <select>
+                <option value="option1">5</option>
+                <option value="option1">10</option>
+                <option value="option1">15</option>
+                <option value="option1">20</option>
+                <option value="option1">25</option>
+                <option value="option1">50</option>
+                <option value="option1">100</option>
+            </select>
+            записей на странице
+        </div>
+        <div class="box">
+            Показаны записи с
+            <span>11</span>
+            по
+            <span>20</span>
+            из
+            <span>190</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <div class="posts">
+    </div>
+</main>
+<footer class="footer container">
+        <button class="btn btn-back">
+           Назад
+        </button>
+        <div class="block-btns">
+            <button class="btn">
+                1
+            </button>
+            <button class="btn">
+                2
+            </button>
+            <button class="btn">
+                3
+            </button>
+        </div>
+        <button class="btn btn-forward">Вперед
+        </button>                                                                                                                                     
+</footer>
+<template id ='post'>
+    <div class="post">
+        <div class='upper_post'>Evidence suggests domesticated cats have been around since 3600 B.C., 2,000 years before Egypt's pharaohs.</div>
+        <div class='lower_post'>
+            <div class='author'>Alex Wohlbruck</div>
+            <div class='image-right'>
+                &#128077;
+                    <span class="upvotes">2</span>
+            </div>
+        </div>
+    </div>
+</template>
+<script src="script.js"></script>
+</body>
+</html>
