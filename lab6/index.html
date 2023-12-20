@@ -1,76 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-<header css="header">
-    <div class="search">
-        <input class="input" type="text">
-        <button class="btn">Найти</button>
-    </div>
-    <div class="container">
-        <div class="left-text">
-            Показывать по
-            <select>
-                <option value="option1">5</option>
-                <option value="option1">10</option>
-                <option value="option1">15</option>
-                <option value="option1">20</option>
-                <option value="option1">25</option>
-                <option value="option1">50</option>
-                <option value="option1">100</option>
-            </select>
-            записей на странице
-        </div>
-        <div class="box">
-            Показаны записи с
-            <span>11</span>
-            по
-            <span>20</span>
-            из
-            <span>190</span>
-        </div>
-    </div>
-</header>
-
-<main class="container">
-    <div class="posts">
-    </div>
-</main>
-<footer class="footer container">
-        <button class="btn btn-back">
-           Назад
-        </button>
-        <div class="block-btns">
-            <button class="btn">
-                1
-            </button>
-            <button class="btn">
-                2
-            </button>
-            <button class="btn">
-                3
-            </button>
-        </div>
-        <button class="btn btn-forward">Вперед
-        </button>                                                                                                                                     
-</footer>
-<template id ='post'>
-    <div class="post">
-        <div class='upper_post'>Evidence suggests domesticated cats have been around since 3600 B.C., 2,000 years before Egypt's pharaohs.</div>
-        <div class='lower_post'>
-            <div class='author'>Alex Wohlbruck</div>
-            <div class='image-right'>
-                &#128077;
-                    <span class="upvotes">2</span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="border border-bottom border-black"> 
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container py-2">
+              <img src="./images/logo_187_50.png" alt="Логотип Политеха">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#">О курсе</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Программа</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Технологии</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
-</template>
-<script src="script.js"></script>
-</body>
+          </nav>
+        </header>
+        <main>
+          <section class="container-fluid text-bg-light-gray">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-md-6 text-center text-lg-start px-5 pb-5 pb-lg-0">
+                <h1 class="fw-bold">Основы веб-технологии</h1>
+                <p>Курс знакомит слушателей с основами технологий HTML, CSS и JavaScript.</p>
+                <button type="button" class="btn btn-light rounded-0">Подробнее</button>
+                <button type="button" class="btn btn-dark rounded-0">Написать нам</button>
+              </div>
+              <div class="col-md-6 text-center">
+                <img src="images/web-dev.svg">
+              </div>
+            </div>
+          </div>
+          </section>
+          <section class="bg-dark ">
+            <div class="container text-white py-5 px-5">
+                <div class="text-center mt-3">
+                    <h2 class="fw-bold">Заложите прочный фундамент будущей карьеры!</h2>
+                </div>
+                <div class="text-center">
+                    <div class="headline w-25 mx-auto my-4"></div>
+                </div>
+                <div class="text-center">
+                    <p>Только знакомитесь с веб-технологиями? Интернет на сегодняшний день развивается феноменально быстро. Поэтому выбрав веб-технологии в качетсве своей специолизации, можете быть уверены - достойное будущее Вам гарантировано.</p>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-info fs-5 rounded-0">Записаться на курс</button>
+                </div>
+            </div>
+          </section>
+          <section class="container py-5">
+            <h2 class="fw-bold text-center">
+              Программа курса
+            </h2>
+            <div class="headline w-25 mx-auto my-4"></div>
+            <div class="row text-center px-5 py-3">
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">Development tools</p>
+                <p>Visual Studio Code, Emmet, Postman</p>
+              </div>
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">HTML</p>
+                <p>Основы языка разметки HTML5.</p>
+              </div>
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">CSS</p>
+                <p>Основы каскадных таблиц стилей.</p>
+              </div>
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">HTTP</p>
+                <p>Структура протокола НТТР.</p>
+              </div>
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">JavaScript</p>
+                <p>Язык программирования JavaScript, Формат JSON.</p>
+              </div>
+              <div class="col-md-4 py-2">
+                <i class="bi bi-code-slash fs-2 text-blue"></i>
+                <p class="fs-4 fw-bold">Bootstrap</p>
+                <p>Фреймворк для верстки Bootstrap.</p>
+              </div>
+            </div>
+          </section>   
+          <section class="technology container-fluid">
+            <div class="py-5 text-bg-light-gray">
+              <h2 class="fw-bold text-center">
+                Технологии
+              </h2>
+              <div class="headline w-25 mx-auto mt-4"></div>
+            </div>
+            <div class="row">
+                  <div class="col-md-6 col-lg-3 p-0">
+                      <img src="./images/html.jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 col-lg-3 bg-black text-white d-flex justify-content-center align-items-center h-300">
+                      <p class="modal_text">HMTL & CSS</p>
+                  </div>
+                  <div  class="col-md-6 col-lg-3 p-0">
+                    <img src="./images/js.jpg" class="img-fluid">
+                </div>
+                  <div  class="col-md-6 col-lg-3 bg-black text-white d-flex justify-content-center align-items-center  h-300">
+                      <p class="modal_text">JavaScript</p>
+                  </div>
+                  <div  class="col-md-6 col-lg-3 bg-black text-white d-flex justify-content-center align-items-center  h-300">
+                      <p class="modal_text">Bootstrap</p>
+                  </div>
+                  <div  class="col-md-6 col-lg-3 p-0">
+                      <img src="./images/bootstrap.jpg" class="img-fluid">
+                  </div>
+                  <div class="col-md-6 col-lg-3 bg-black text-white d-flex justify-content-center align-items-center h-300">
+                      <p class="modal_text">HTTP</p>
+                  </div>
+                  <div  class="col-md-6 col-lg-3 p-0">
+                      <img src="./images/http.jpg" class="img-fluid">
+                  </div>
+          </div>
+          <div class="py-5">
+            <h2 class="fw-bold text-center">
+              Контакты
+            </h2>
+            <div class="headline w-25 mx-auto mt-4"></div>
+          </div>
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-md-6  text-start">
+                  <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/bolshaya_semyonovskaya_ulitsa_38/Z04YcQZhTEQPQFtvfXt5cH5qZQ==/?ll=37.712179%2C55.781335&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Семёновская улица, 38 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.712179%2C55.781335&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjczNzkxORJQ0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCR0L7Qu9GM0YjQsNGPINCh0LXQvNGR0L3QvtCy0YHQutCw0Y8g0YPQu9C40YbQsCwgMzgiCg2Y2BZCFQsgX0I%2C&z=17" width="100%" height="540" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+                <div class="col-md-6 text-start pt-5 pt-md-0">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" wfd-id="id0" placeholder="Введите адрес электронной почты">
+                      <div id="emailHelp" class="form-text">Мы не передаем введенные данные третьим лицам.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputName" class="form-label">Имя</label>
+                      <input type="password" class="form-control" id="exampleInputName1" wfd-id="id1" placeholder="Введите имя" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="textarea" class="form-label">Сообщение</label>
+                      <textarea class='form-control' name="massage" id="floatingTextarea" cols="10" rows="10" placeholder="Введите сообщение"></textarea>
+                    </div>
+                      <button type="submit" class="btn btn-primary bg-light text-black border-black rounded-0 fs-5">Отправить</button>
+                  </form>
+                </div>
+              </div>
+              </div>
+            </section>
+        </main>
+        <footer class="bg-black">
+          <div class="text-center">
+            <img class="py-5" src="./images/logo_187_50_white.png" alt="">
+            <p class="px-5 pb-3 w-50 mx-auto text-white">Московский политехнический университет является крупнейшей образовательной организацией, готовящей квалифицированных специалистов для производства.</p>
+            <div class="headline bg-white"></div>
+            <p class="pt-3 text-grey">© 2023 Московский политехнический университет</p>
+            <p class="pb-4 text-grey">Vector disign by <a href="">Vecteezy</a></p>
+          </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>

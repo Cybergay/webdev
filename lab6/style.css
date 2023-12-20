@@ -1,0 +1,29 @@
+
+.text-bg-light-gray {
+    background: #eaecf0;
+}
+
+.headline {
+    height: 3px;
+    background-color: #84dbff;
+}
+
+.text-blue {
+    color:#84dbff;
+}
+
+.technology .img-fluid {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal_text {
+    color:#84dbff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.h-300 {
+    height: 300px;
+}

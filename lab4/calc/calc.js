@@ -63,10 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
             } else if (token === '(') {
                 operatorStack.push(token);
             } else if (token === ')') {
-                while (operatorStack.length && operatorStack[operatorStack.length - 1] !== '(') {
+                while (operatorStack.length > 0 && operatorStack[operatorStack.length - 1] !== '(') {
                     outputQueue.push(operatorStack.pop());
                 }
-                operatorStack.pop();
+                if (operatorStack.length > 0) {
+                    operatorStack.pop();
+                }
             }
         });
 
@@ -82,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
         expression.split(' ').forEach(token => {
             if (isNumeric(token)) {
                 stack.push(parseFloat(token));
-            } else {
+            } else if (stack.length >= 2) {
                 const b = stack.pop(), a = stack.pop();
                 switch (token) {
                     case '+':
@@ -95,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         stack.push(a * b);
                         break;
                     case '/':
+                        if (b === 0) {
+                            throw new Error('Деление на ноль');
+                        }
                         stack.push(a / b);
                         break;
                 }
